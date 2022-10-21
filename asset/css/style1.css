@@ -1,0 +1,811 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 2000px;
+   background-color: #FFFFFF;
+   overflow-x: hidden;
+}
+section::-webkit-scrollbar {
+    display: none;
+}
+
+/* home */
+
+
+/* musci */
+.audio {
+    position: fixed;
+    z-index: 1000;
+    margin-left: 40px;
+    margin-bottom: 80px;
+}
+
+.audio button {
+    background-color: #d0767f;
+    color: rgb(220, 214, 214);
+    border-radius: 50px;
+}
+
+.audio button:hover {
+    background-color: #c1636c;
+    color: white;
+}
+
+
+.audio p {
+   display: none;
+}
+
+
+
+
+.modal-content {
+    height: 590px;
+    width: 90%;
+   
+}
+
+
+.modal .modal-content {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: all 0.3s;
+}
+.modal.show .modal-content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.modal-content {
+    height: 590px;
+    width: 70%;
+    margin: auto;
+}
+
+.modal-header {
+    transition: 0.8s;
+}
+
+.modal-body .dompet {
+    margin-left: 200px;
+}
+
+.modal-body h1 {
+    font-size:26px;
+    text-align: center;
+}
+
+.modal-body .pengguna {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.modal-body p {
+    font-size: 17px;
+    margin-top: -8px;
+    
+}
+
+.modal-body img {
+    
+    margin: auto;
+    height: 200px;
+
+}
+
+.modal-body .bank {
+    margin-top: 20px;
+}
+
+.modal-body .nama {
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: -18px;
+}
+
+.modal-body h2 {
+    font-size: 20px;
+}
+
+.modal-dialog {
+    width: 700px;
+}
+
+
+
+
+
+.kirim_hadiah a {
+    width: 180px;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    background-color: #d0767f;
+
+    color: rgb(247, 246, 246);
+    
+    font-family: 'Quicksand', sans-serif;
+}
+
+.kirim_hadiah a:hover {
+   color: white;
+   background-color: #c78289;
+   
+  transition: 0.6s;
+}
+
+#navbar .navbar {
+    
+    margin: auto;
+    
+    background-color: #d0767f;
+
+    
+}
+
+#navbar .navbar:hover {
+    background-color: #c1636c;
+    transition: 0.6s;
+}
+
+.navbar .bi:hover {
+    color: white;
+    
+    
+}
+
+.jumbotron {
+    background-image: url(slider-1-1600x900.jpg);
+    height: 665px;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(2, 2, 2, 0.754), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4 {
+    padding-top: 240px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron .lead {
+    text-align: center;
+    color:white;
+    font-size: 90px;
+    font-family: 'Tangerine', cursive;
+    margin-top: -18px;
+}
+
+.jumbotron h5 {
+    text-align :center;
+    color : white;
+    font-size: 27px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* INFORMASI */
+#informasi {
+    color:#212529;
+}
+
+#informasi img {
+    width: 80px;
+    margin-bottom: 7px;
+}
+
+#informasi .informasi {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    color:#212529;
+}
+
+#informasi .protokol {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:#212529;
+    margin-bottom: 10px;
+}
+
+#informasi p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    color:#212529;
+    margin-bottom: 33px;
+}
+
+#informasi .tangan {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 33px;
+}
+
+/* AKHIR INFORMASI */
+
+/* STORY */
+#story img {
+    background-size: cover;
+    width: 300px;
+    margin: auto;
+}
+
+#story .story {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    color:#212529;
+    margin-top: -90px;
+    margin-bottom: 50px;
+}
+
+#story .carousel {
+        background-image: url('asset/foto/kembang1.png');
+}
+
+#story .carousel h2 {
+       font-family: 'Tangerine', cursive;
+        background-color: #f5e2e4;
+        margin-bottom: 20px;
+        font-size: 28px;
+}
+
+#story .carousel p {
+    font-size: 14px;
+    color:#212529;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding-left: 23px;
+    padding-right: 23px;
+   
+}
+
+#story .carousel .mb-5  {
+    font-style: italic;
+    font-size:15px;
+    font-weight:400;
+}
+/* AKHIR STORY */
+
+/* meet */
+
+#meet {
+    background-color: #e2eae8;
+}
+
+#meet img {
+    background-size: cover;
+    width: 250px;
+    margin: auto;
+
+}
+
+#meet .story {
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    color:#212529;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#meet .text h3 {
+    font-style: italic;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+#meet .text p {
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#meet .pengantin img {
+    width: 230px;
+    height: 260px;
+    border: 7px solid #c1636c;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+#meet .pengantin h2 {
+    font-family: 'Tangerine', cursive;
+    font-size: 46px;
+}
+
+#meet .pengantin span {
+    font-size :35px;
+}
+
+#meet .pengantin p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: black;
+    color:#212529;
+}
+
+#meet .pengantin p b {
+    font-weight: 900;
+    color:#212529;
+}
+
+/* akhir meet */
+
+/* section hari acara */
+#hari_acara {
+    margin-top: -140px;
+}
+
+#hari_acara .container img {
+    background-size: cover;
+    width: 300px;
+    margin-top: 30px;
+}
+
+#hari_acara h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom : 20px;
+}
+
+#hari_acara p {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 40px;
+    margin-top: -9px;
+}
+
+#hari_acara h1 {
+    font-size: 46px ; 
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: px;
+}
+
+#hari_acara h4 {
+    font-size: 15px;
+    text-align: center;             
+        
+}
+
+#hari_acara .acara {
+    margin-top : -50px;
+}
+
+#hari_acara .acara {
+    margin-bottom: 100px;
+}
+
+#hari_acara .acara .card {
+    width: 350px;
+    margin: auto;
+    margin-bottom : 30px;
+}
+
+.tanggal h5 {
+    margin-top: 28px;
+    color: #c1636c;
+    font-size: 37px;
+}
+
+.tanggal p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tanggal .card {
+    width: 200px;
+    margin-top: 30px;
+}
+
+.tanggal {
+    margin-top: 50px;
+}
+
+.tanggal .btn {
+    background-color: #c78289;
+    margin-top: 35px;
+    color :white;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.tanggal .btn:hover {
+background-color:  #c1636c;
+color: white;
+}
+
+
+/* akhir hari acara */
+
+/* Gallery */
+#gallery img{
+    width: 260px;
+}
+
+
+#gallery .gambar {
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    transition: 300ms;
+    object-fit: cover;
+}
+
+#gallery h1 {
+    margin-bottom: 70px;
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    color:#212529;
+}
+
+#gallery {
+    background-color: #e2eae8;
+ 
+}
+
+
+#gallery .gambar:hover {
+    filter: brightness(50%);
+    transition: 400ms;
+}
+/* akhir galery */
+
+/* quotes */
+
+#quotes {
+    margin-bottom: 40px;
+}
+
+#quotes img {
+    background-size: cover;
+    width: 300px;
+    
+}
+
+#quotes p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+#quotes .text {
+    margin-top: -80px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#quotes h5 {
+    font-family: 'Tangerine', cursive;
+    font-size: 28px;
+    margin-bottom:43px;
+}
+
+/* svg quotes */
+.quotes {
+    position: absolute;
+}
+
+
+
+/* akhir quotes */
+
+/* guest book */
+#guest_book {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url(../foto/images/Background_Circle.png);
+}
+
+#guest_book .ucapan {
+    height: 400px;
+    background-color: #f5e2e4;
+    border-radius: 30px;
+    overflow: auto;
+    margin-top: 50px;
+    background-color: #f5e2e4;
+    margin-bottom: 80px;
+}
+#guest_book .ucapan h3 {
+    margin-top: 40px;
+    font-size: 17px;
+    color: #6c757d;
+    text-align: justify;
+}
+
+#guest_book p {
+    margin-left: 90px;
+}
+
+#guest_book .ucapan .kotak {
+    background-color: #c1636c;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 17px;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: left;
+}
+
+#guest_book img {
+    width: 200px;
+   margin-bottom: 40px;
+  
+    margin: auto;
+}
+
+#footer {
+    
+    background-color: rgb(62, 65, 68);
+    color: rgb(211, 177, 177);
+    font-family: 'Quicksand', sans-serif;
+    
+   
+}
+
+
+#footer p {
+    margin-top: 10px;
+    text-align: right;
+    margin-bottom: 20px;    
+}
+
+
+#footer li {
+    list-style: none;
+    font-size: 18;
+    margin-bottom: 10px;
+}
+
+#footer li i {
+    font-size: 19px;
+}
+
+
+#footer a {
+    text-decoration: none;
+    color: rgb(225, 211, 211);
+}
+
+
+/* Akhir footer */
+
+/* Audio */
+   
+/* akhir  */
+
+
+/* DEVICE Dekstop */
+@media (min-width : 775px) {
+    
+
+    
+.audio p {
+    display: block;
+    color: #c1636c;    
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: -1px;
+}
+
+
+
+    .modal-body .dompet {
+        margin-left: 100px;
+    }
+    
+    
+#navbar .navbar {
+    width: 700px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #d0767f;
+    transition: 0.6s;
+    margin-bottom: 10px;
+}
+
+
+.jumbotron .display-4 {
+    padding-top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.jumbotron .lead {
+    text-align: center;
+    color:white;
+    font-size: 112px;
+    font-family: 'Tangerine', cursive;
+    margin-top: -20px;
+}
+
+.jumbotron h5 {
+    text-align :center;
+    color : white;
+    font-size: 32px;
+    font-family: 'Quicksand', sans-serif;
+}
+ 
+
+#informasi {
+    color:#212529;
+}
+
+#indormasi img {
+    width: 100px;
+}
+
+#informasi .informasi {
+
+    font-size: 75px;
+
+}
+#informasi .protokol {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#informasi p {
+    font-size: 17px;
+}
+
+#informasi .tangan {
+    width: 250px;
+}
+
+#story .story {
+    font-size: 75px;
+}
+
+#story .carousel h2 {
+    font-size: 32px;
+}
+
+#story .carousel p {
+    font-size: 16px;
+}
+
+#meet {
+    margin-top: -50px;
+}
+
+#meet img {
+    background-size: cover;
+    width: 300px;
+    margin: auto;
+}
+
+#meet .story {
+    font-size: 75px;
+}
+
+#meet .text h3 {
+    font-size: 17px;
+
+}
+
+#meet .text p {
+    font-size: 17px;
+
+}
+
+#meet .pengantin img {
+    width: 250px;
+}
+
+#meet .pengantin h2 {
+    font-size: 56px;
+}
+
+#meet .pengantin span {
+    font-size :40px;
+}
+
+#meet .pengantin p {
+    font-size: 16px;
+}
+
+
+
+#hari_acara h1 {
+    font-size: 56px ; 
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: px;
+}
+
+
+#hari_acara .acara .card {
+    width: 350px;
+    margin-bottom : 30px;
+    margin: 0 !important;
+
+}
+
+
+.tanggal {
+    margin-top: 100px;
+}
+
+.tanggal .btn {
+    background-color: #c78289;
+    margin-top: 50px;
+    color :white;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.tanggal .card {
+    width: 158px;
+}
+
+.tanggal .card h5 {
+    font-size: 35px;
+}
+
+#gallery .gambar{
+  width: 150px;
+  height: 150px;
+    background-size: cover;
+    margin-bottom: 30px;
+    transition: 300ms;
+}
+
+#gallery img {
+    width: 300px;
+}
+
+#gallery h1 {
+    font-size: 76px;
+}
+
+#quotes img {
+    margin-top: 120px;
+}
+
+}
+
+/* DEVICE Dekstop */
+@media (min-width : 1030px) {
+    #gallery .gambar {
+        width: 270px;
+        
+        height: 280px;
+    }
+}

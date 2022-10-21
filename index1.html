@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LINK GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@456&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <!-- AKHIR LINK GOOGLE FONT -->
+     <!-- link font awsome offline -->
+     <link rel="stylesheet" href="asset/font/fontawesome-free-5.15.4-web/css/all.min.css">
+
+     <!-- link lightbox -->
+     <link rel="stylesheet" href="asset/lightbox/src/css/lightbox.css">
+
+    <!-- LINK CSS SENDIRI -->
+    <link rel="stylesheet" href="asset/css/style1.css">
+    <!-- AKHIR LINK CSS SENDIRI -->
+
+    <!-- link aos  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- link jquery light box -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+<!-- play musik -->
+    <div class="audio fixed-bottom">
+        
+<audio id="audioNotifikasi">
+    <source src="asset/musik/laguPengantin.mp4" type="audio/mpeg">
+  </audio>
+  <p>Play Music</p>
+  <button class="btn" onclick="playAudio()" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+  </svg></button>
+  <button class="btn" onclick="pauseAudio()" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"" fill="currentColor" class="bi bi-pause-circle" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z"/>
+  </svg></button> 
+    </div>    
+
+
+  <script type="text/javascript">
+    var el = document.getElementById("audioNotifikasi"); 
+    function playAudio() { 
+      el.play(); 
+    } 
+    function pauseAudio() { 
+      el.pause(); 
+    } 
+    </script>
+<!-- akhir play music -->
+
+
+<!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Kirim Hadiah</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="currentColor" class="bi bi-wallet2 dompet" viewBox="0 0 16 16">
+                <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+              </svg>
+            <h1> Kirim Hadiah</h1>
+            <p class="pengguna">Untuk Dani dan putri</p>
+            <h2>Bank Jago</h2>
+           
+            <p>89056808182</p>
+            <p class="nama">Dani Putra Pratama</p>
+            <hr>
+
+            <div class="row">
+               
+                <div class="col text-center">
+                    <img src="asset/foto/qr.jpeg"  alt="">
+                    <p class="bank">DANA</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    
+      <div class="kirim_hadiah">
+    <a href="" class="btn fixed-bottom"  data-bs-toggle="modal" data-bs-target="#exampleModal">Kirim Hadiah</a>
+</div>
+ <!-- Bottom Navbar -->
+ <section id="navbar">
+    <nav class="navbar navbar-dark  navbar-expand fixed-bottom">
+        <ul class="navbar-nav nav-justified w-100">
+          <li class="nav-item">
+            <a href="#home" class="nav-link page-scrol">
+              <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#informasi" class="nav-link page-scrol">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                  </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#story" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                    <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                  </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#hari_acara" class="nav-link page-scrol">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                    <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                  </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link page-scrol">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+ </section>
+    <!-- section home -->
+    <section id="home">  
+        <div class="jumbotron">
+            
+               <div class="container">
+                <h1 class="display-4">We Are Getting Married</h1>
+                <p class="lead">Dani & Putri</p>
+                <h5>12 December 2021</h5>
+               </div>
+        </div>
+    </section>
+    <!-- akhir section home -->
+    <section id="informasi">
+        <div class="container " data-aos="fade-up" data-aos-duration="900">
+            <div class="row">
+                <div class="col-md-12 mb-2 text-center">
+                    <h1 class="informasi">Informasi</h1>
+                </div>
+                <div class="col-md-12 text-center">
+                    <h1 class="protokol">Protokol Covid 19</h1>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-6 mb-2 text-center">
+                    <p>Dalam upaya mengurangi penyebaran Covid 19 pada masa pandemi, kami harapkan kedatangan para tamu undangan agar menjalankan protokol yang berlaku.</p>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3  mb-2 text-center">
+                    <img src="asset/foto/pakaimasker.png"    alt="">
+                    <p>Wajib Menggunakan Masker</p>
+                </div>
+                <div class="col-md-3 mb-2 text-center">
+                    <img src="asset/foto/cucitangan.png"   alt="">
+                    <p class="tangan">Jaga Kebersihan dengan Mencuci Tangan atau Handsanitizer
+                    </p>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3 text-center">
+                    <img src="asset/foto/jagajarak.png"   alt="">
+                    <p>Saling Menjaga Jarak di Dalam Acara</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="asset/foto/tidakberjabattangan.png"   alt="">
+                    <p>Tidak berjabat tangan terlebih dahulu</p>
+                </div>
+                <div class="col-md-3"></div> 
+            </div>
+        </div>
+    </section>
+<!-- akhir informasi -->
+
+        <!-- story -->
+        <section id="story">
+            <div class="container"  data-aos="fade-up" data-aos-duration="900" >
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="asset/foto/kembang1.png" alt="">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h2 class="story">Our Love Story</h2>
+                    </div>  
+                </div>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" style="width: 900px; text-align: center; margin: auto;" >
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam nemo est totam officiis delectus dolores optio illo quae nihil, porro accusamus molestias esse nostrum ea libero vero eligendi, magni nisi deleniti necessitatibus harum voluptatibus! Id voluptate incidunt soluta vero ducimus..</p>
+                            <p class="mb-5"><span style="font-weight: bold;">09 oktober 2021 </span> - Samping rumah pak haji</p>
+                        
+                      </div>
+                      <div class="carousel-item " data-bs-interval="10000">
+                        
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum voluptas aperiam eligendi quasi veniam repudiandae inventore sapiente quidem laudantium tenetur recusandae exercitationem ullam, repellendus cupiditate, sit voluptate dolore. Ut.</p>
+                            <p class="mb-5"><span style="font-weight: bold;">09 oktober 2021 </span> - Samping rumah pak haji</p>
+                        
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias autem nam voluptatem mollitia, quae quia molestiae dignissimos, tenetur quam eaque aliquam eius ipsum, vero corrupti incidunt id! Quas placeat, cupiditate molestiae, earum voluptatibus maiores dolores voluptate ducimus laborum libero tenetur iure mollitia aspernatur consectetur. Dolore numquam eos adipisci exercitationem ea dolor! Mollitia laborum iusto laudantium laboriosam quo molestiae exercitationem facilis, eos fuga quasi necessitatibus. Iusto, voluptatum! Repudiandae dignissimos rem magni beatae iusto at hic consectetur, expedita odit velit, dicta possimus dolores amet omnis voluptas nihil modi architecto neque. Tempore exercitationem voluptas hic impedit mollitia expedita nobis distinctio illo cupiditate sint?</p>
+                        <p class="mb-5"><span style="font-weight: bold;">09 oktober 2021 </span> - Samping rumah pak haji</p>
+                      </div>
+                      
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner justify-content-center  text-center">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <h2>Awal Kenal</h2>
+                                    </div>
+                                </div>
+                                    <div class="carousel-item active text-center">
+                                        <p>Pertama kali kenal hanya lewat Facebook. Dan ternyata dia adalah kakak kelas saat SMA dulu. Dia berinisiatif untuk berkenalan dan minta alamat. Lost contact selama 1 tahun, akhirnya setelah lulus kuliah kami bertemu lagi dan akhirnya mengikat janji. Awalnya sih ragu dan takut dia hanya bercanda atau serius  Karena kegigihan dan keseriusannya kami pacaran 5 tahun kemudian menikah.Ternyata dia beneran datang dan sekarang kami sedang mempersiapkan rencana pernikahan kami.</p>
+                                        <p class="mb-5"><span style="font-weight: bold;">09 oktober 2021 </span> - Samping rumah pak haji jamal</p>
+                                    </div>
+                                    <div class="carousel-item active text-center">
+                                        <p>Pertama kali kenal hanya lewat Facebookasasas. Dan ternyata dia adalah kakak kelas saat SMA dulu. Dia berinisiatif untuk berkenalan dan minta alamat. Lost csasasasasontact selama 1 tahun, akhirnya setelah lulus kuliah kami bertemu lagi dan akhirnya mengikat janji. Awalnya sih ragu dan takut dia hanya bercanda atau serius  Karena kegigihan dan keseriusannya kami pacaran 5 tahun kemudian menikah.Ternyata dia beneran datang dan sekarang kami sedang mempersiapkan rencana pernikahan kami.</p>
+                                        <p class="mb-5"><span style="font-weight: bold;">09 oktober 2021 </span> - Samping rumah pak haji jamal</p>
+                                    
+                                    </div>
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" style="color:black" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div> -->
+            </div>
+        </section>
+        <!-- akhir story -->
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#e2eae8" fill-opacity="1" d="M0,256L120,234.7C240,213,480,171,720,170.7C960,171,1200,213,1320,234.7L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+          </svg>
+          <section id="meet">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="asset/foto/Asset-7.png" alt="">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <h2 class="story">Bride & Groom</h2>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="text col-md-8 text-center"  data-aos="fade-up" data-aos-duration="900"> 
+                        <h3>Assalamu’alaikum Warahmatullahi Wabarakatuh</h3>
+                        <p>Maha suci Allah SWT yang telah menciptakan makhluk-Nya berpasang-pasangan. <br>
+                            Ya Allah, perkenankanlah kami merangkai kasih sayang yang Kau ciptakan di antara putra-putri kami:</p>
+                    </div> 
+                </div>
+                <div class="pengantin row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 text-center" data-aos="fade-down-left" data-aos-duration="1000" >
+                        <img src="asset/foto/pengantin/pengantin2.jpeg" class="rounded-circle" alt="">
+                        <h2>- Dani - 
+                            <br><span>Dani Putra Pratama</span>
+                        </h2>
+                        <p>
+                            Putra Pertama Dari Pasangan <br>
+                            <b>Bapak Tri Wely Yulianto & Ibu Sulismiati</b>
+                        </p>
+                        <p>Bagelen, Gedong tataan</p>
+                    </div>
+                    <div class="col-md-4 text-center" data-aos="fade-down-right" data-aos-duration="1000">
+                        <img src="asset/foto/pengantin/pengantin1.jpeg" class="rounded-circle" alt="">
+                        <h2>- Putri - 
+                            <br><span>Putri Dwi Saputri</span>
+                        </h2>
+                        <p>
+                            Putri kedua Dari Pasangan <br>
+                            <b>Bapak Tukiman & Wati</b>
+                        </p>
+                        <p>Bagelen, Gedong tataan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2eae8" fill-opacity="1" d="M0,192L120,181.3C240,171,480,149,720,160C960,171,1200,213,1320,234.7L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>    
+<!-- akhir section meet -->
+
+
+<!-- hari acara -->
+<section id="hari_acara">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="asset/foto/kembang1.png"  alt="">
+            </div>
+        </div>
+        <div class="row acara">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card-body">
+                        <h1>Akad Nikah</h1>
+                        <h3>Thursday, 02 December 2021
+                        </br><span> 09:00 - 10:00 WIB</span></h3>
+                        <h4>Mempelai Wanita</h4>
+                        <p>Dusun Tanjung Harapan RT/RW: 002/002 Kel. Cabang Empat Kec. Abung Selatan, Lampung Utara</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card shadow" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-body">
+                    <h1>Resepsi</h1>
+                    <h3>Thursday, 02 December 2021 
+                       <br><span> 10:00 - Selesai</span></h3>
+                    <h4>Mempelai Wanita</h4>
+                    <p>Dusun Tanjung Harapan RT/RW: 002/002 Kel. Cabang Empat Kec. Abung Selatan, Lampung Utara</p>                   
+                </div>
+            </div>                    
+            </div>
+        </div>
+        <div class="row tanggal text-center" data-aos="fade-right" data-aos-duration="1000">
+            <div class="col-md-2"></div>
+            <div class="col col-md-2">
+                <div class="card ">
+                        <h5 id="days"></h5>
+                        <p>Days</p>
+                </div>
+            </div>
+            <div class="col col-md-2">
+                <div class="card">
+                        <h5 id="hours"></h5>
+                        <p>Hours</p>
+                </div>   
+            </div>
+            <div class="col col-md-2">
+                <div class="card">
+                        <h5 id="minutes"></h5>
+                        <p>Minutes</p>
+                </div>
+            </div>
+            <div class="col col-md-2">
+                <div class="card">
+                        <h5 id="seconds"></h5>
+                        <p>Seconds</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <a href="https://goo.gl/maps/nrRfDdZxoPXTGCcFA" class="btn ">Open Google Map</a>
+            </div>
+        </div>
+    </div>
+</section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#e2eae8" fill-opacity="1" d="M0,256L120,234.7C240,213,480,171,720,170.7C960,171,1200,213,1320,234.7L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+  </svg>
+<!-- akhir hari acara -->
+
+
+
+<!-- Gallery -->
+<section id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="asset/foto/Asset-7.png" alt="">
+                <h1>Our Gallery</h1>
+            </div>
+        </div>
+        <div class="row gallery">
+            <div class="col col-md-3">
+                  <a href="asset/foto/galery/Randy & Sofhia _ Cyraphoto.png" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/Randy & Sofhia _ Cyraphoto.png" class="gambar" alt=""></a>
+            </div>
+            <div class="col col-md-3">
+                  <a href="asset/foto/galery/KOREAN WEDDING C-024 MARRIED STUDIO _ korea wedding pledge.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/KOREAN WEDDING C-024 MARRIED STUDIO _ korea wedding pledge.jpeg" class="gambar shadow" alt="">
+                </a>                
+            </div>            
+            <div class="col col-md-3 ">
+                  <a href="asset/foto/galery/Candi Plaosan, Simbol Kekuatan Cinta Yang Mampu Menyatukan Perbedaan.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/Candi Plaosan, Simbol Kekuatan Cinta Yang Mampu Menyatukan Perbedaan.jpeg" class="gambar shadow" alt="">
+                </a>
+            </div>            
+            <div class="col col-md-3 ">
+                  <a href="asset/foto/galery/indah_ on Instagram_ “Bestfriend since 2016 🚻”.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/indah_ on Instagram_ “Bestfriend since 2016 🚻”.jpeg" class="gambar shadow" alt="">
+                </a>
+            </div>            
+            <div class="col col-md-3 ">
+                  <a href="asset/foto/galery/PERNIKAHAN INDONESIA _ WEDDING membagikan foto di Instagram_ “Hidup itu bukan tentang memiliki dan mendapatkan, tetapi tentang memberi serta menjadi _sesuatu” 🤍…” • Lihat 1_016 foto dan video di profilnya_.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/PERNIKAHAN INDONESIA _ WEDDING membagikan foto di Instagram_ “Hidup itu bukan tentang memiliki dan mendapatkan, tetapi tentang memberi serta menjadi _sesuatu” 🤍…” • Lihat 1_016 foto dan video di profilnya_.jpeg" class="gambar shadow" alt="">
+                </a>
+            </div>            
+            <div class="col col-md-3 ">
+                  <a href="asset/foto/galery/WEDDING JAWA HIJAB_ 37+ Foto Pengantin Adat Jawa Muslimah Hijab Modern Temanggung Elisa+Iqbal.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/WEDDING JAWA HIJAB_ 37+ Foto Pengantin Adat Jawa Muslimah Hijab Modern Temanggung Elisa+Iqbal.jpeg" 
+                class="gambar shadow" alt="">
+                </a>
+            </div>                      
+            <div class="col col-md-3 ">
+                  <a href="asset/foto/galery/Couple Session.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/Couple Session.jpeg" class="gambar shadow" alt=""></a>
+            </div>            
+            <div class="col col-md-3 ">
+                  <a href="asset/foto/galery/17√ Foto Prewedding Jawa Hijab di Rumah Budaya Tembi Jogja_ Prewed Dita+Iwan.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/17√ Foto Prewedding Jawa Hijab di Rumah Budaya Tembi Jogja_ Prewed Dita+Iwan.jpeg" class="gambar shadow" alt=""></a>
+            </div>                                 
+            <div class="col col-md-3 ">
+                  <a href="asset/foto/galery/17√ Foto Prewedding Jawa Hijab di Rumah Budaya Tembi Jogja_ Prewed Dita+Iwan.jpeg" data-lightbox="example-set" data-title="Klik tanda silang untuk kembali">
+                <img src="asset/foto/galery/17√ Foto Prewedding Jawa Hijab di Rumah Budaya Tembi Jogja_ Prewed Dita+Iwan.jpeg" class="gambar shadow" alt=""></a>
+            </div>                                 
+        </div>
+    </div>
+</section>
+<svg class="quotes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2eae8" fill-opacity="1" d="M0,192L120,181.3C240,171,480,149,720,160C960,171,1200,213,1320,234.7L1440,256L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>    
+<!-- akhir Gallery -->
+
+
+<!--    QUOTES -->
+
+<section id="quotes">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="asset/foto/kembang1.png" alt="">
+            </div>
+        </div>
+        <div class="row text" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-md-12 text-center">
+                <p>"وَ مِنۡ اٰیٰتِہٖۤ اَنۡ خَلَقَ لَکُمۡ مِّنۡ اَنۡفُسِکُمۡ اَزۡوَاجًا لِّتَسۡکُنُوۡۤا اِلَیۡہَا وَ جَعَلَ بَیۡنَکُمۡ مَّوَدَّۃً وَّ رَحۡمَۃً ؕ اِنَّ فِیۡ ذٰلِکَ لَاٰیٰتٍ لِّقَوۡمٍ یَّتَفَکَّرُوۡنَ ❝ Dan diantara tanda - tanda kekuasaan-Nya ialah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu. Sesungguhnya yang demikian itu menjadi tanda - tanda kebesaran-Nya bagi orang - orang yang berfikir. ❞"</p>
+                <h5>(Ar-Rum:21)</h5>
+            </div>
+            <div class="col-md-12 text-center">
+                <p>"بَارَكَ اللهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِى خَيْرٍ Barakallahu laka wa baraka ‘alaika wa jama’a bainakuma fiil Khairin ”Mudah-mudahan Allah memberkahi engkau dalam segala hal (yang baik) dan mempersatukan kamu berdua dalam kebaikan”"</p>
+                <h5>HR Abu Hurairah</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- AKHIR QUOTES -->
+<!-- guest Book -->
+<section id="guest_book">
+    <div class="container"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+            <div class="col-md-12 mt-5 text-center">
+                <img class="mt-4" src="asset/foto/kembang2.png" alt="">
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col col-md-6 ucapan shadow">  
+                <h3><div class="kotak">
+                    DJ
+                </div>Dery Julda
+                <br>
+                    <span>08 Desember 2021</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                <h3><div class="kotak">
+                    DJ
+                </div>Dery Julda
+                <br>
+                    <span>08 Desember 2021</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                <h3><div class="kotak">
+                    DJ
+                </div>Dery Julda
+                <br>
+                    <span>08 Desember 2021</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                <h3><div class="kotak">
+                    DJ
+                </div>Dery Julda
+                <br>
+                    <span>08 Desember 2021</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                <h3><div class="kotak">
+                    DJ
+                </div>Dery Julda
+                <br>
+                    <span>08 Desember 2021</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                <h3><div class="kotak">
+                    DJ
+                </div>Dery Julda
+                <br>
+                    <span>08 Desember 2021</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                <h3><div class="kotak">
+                    DJ
+                </div>Dery Julda
+                <br>
+                    <span>08 Desember 2021</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                    <h3><div class="kotak">
+                        DJ
+                    </div>Dery Julda
+                    <br>
+                        <span>08 Desember 2021</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui provident quae nulla repellendus laborum dolorum eaque id nisi deserunt ducimus non.</p>
+                
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+<!-- akhir guest Book -->
+
+
+<section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center judul">
+                <p>@ Design By Dery Julda</p>
+            </div>
+          
+            
+        </div>
+    </div>
+</section>
+<!-- Akhir footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- light box js -->
+
+<script src="asset/lightbox/src/js/lightbox.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".counter").counterUp({
+          delay :10,
+          time :1200
+        });
+      });
+    </script>
+
+
+<!-- link aos js -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script type="text/javascript" src="asset/js/style.js"></script>
+
+
+<script src="asset/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
